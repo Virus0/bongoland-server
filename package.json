@@ -1,0 +1,27 @@
+{
+  "name": "bongoland",
+  "version": "1.0.0",
+  "description": "BongoLand - Online Secure Mod Manager for ETS2 & ATS",
+  "author": "BongoLand Team",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "start": "node run-app.js developer",
+    "start:dev": "node run-app.js developer",
+    "start:player": "node run-app.js player",
+    "build:developer": "node build-app.js developer",
+    "build:player": "node build-app.js player",
+    "build:all": "npm run build:developer && npm run build:player"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "crypto-js": "^4.2.0",
+    "uuid": "^9.0.0",
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}
